@@ -1,100 +1,37 @@
-<!DOCTYPE html> 
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BabiDeal - Acheter et vendre</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial;background:#f5f5f5;color:#222}
-header{background:#ff7900;color:white;padding:20px}
-header h1{margin:0;font-size:30px}
-header p{margin-bottom:0}
-.search{padding:15px}
-input{width:100%;padding:15px;border:1px solid #ddd;border-radius:10px;font-size:16px}
-h2{padding:0 15px}
-.categories{display:flex;gap:10px;overflow:auto;padding:10px}
-.categories span{background:white;padding:12px;border-radius:10px;white-space:nowrap}
-.products{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
-.product{background:white;border-radius:12px;overflow:hidden}
-.photo{height:115px;background:#ffe1c2;display:grid;place-items:center;font-size:55px}
-.info{padding:10px}
-.price{color:#ff7900;font-weight:bold}
-button{background:#ff7900;color:white;border:0;padding:12px;border-radius:8px;width:100%}
-footer{background:#222;color:white;text-align:center;padding:20px;margin-top:20px}
-</style>
-</head>
-<body>
-<header>
-<h1>🛍️ BabiDeal</h1>
-<p>Le marché en ligne de la Côte d'Ivoire 🇨🇮</p>
-</header>
+🛍️ BabiDeal
+Le marché en ligne de la Côte d'Ivoire 🇨🇮
 
-<div class="search">
-<input id="search" placeholder="Rechercher un produit...">
-</div>
-
-<h2>Nos catégories</h2>
-<div class="categories">
-<span>📱 Téléphones</span>
-<span>👕 Mode</span>
-<span>🚗 Véhicules</span>
-<span>🏠 Maison</span>
-<span>💻 Informatique</span>
-</div>
-
-<h2>Les bonnes affaires</h2>
-<div class="products" id="products">
-<div class="product">
-<div class="photo">📱</div>
-<div class="info">
-<strong>Smartphone</strong>
-<p class="price">75 000 FCFA</p>
-<button onclick="alert('Contact vendeur à venir')">Voir l'offre</button>
-</div>
-</div>
-
-<div class="product">
-<div class="photo">👟</div>
-<div class="info">
-<strong>Chaussures</strong>
-<p class="price">15 000 FCFA</p>
-<button onclick="alert('Contact vendeur à venir')">Voir l'offre</button>
-</div>
-</div>
-
-<div class="product">
-<div class="photo">💻</div>
-<div class="info">
-<strong>Ordinateur</strong>
-<p class="price">180 000 FCFA</p>
-<button onclick="alert('Contact vendeur à venir')">Voir l'offre</button>
-</div>
-</div>
-
-<div class="product">
-<div class="photo">🛋️</div>
-<div class="info">
-<strong>Salon</strong>
-<p class="price">120 000 FCFA</p>
-<button onclick="alert('Contact vendeur à venir')">Voir l'offre</button>
-</div>
-</div>
-</div>
-
-<footer>
-<h3>BabiDeal 🇨🇮</h3>
-<p>Achetez et vendez facilement en Côte d'Ivoire.</p>
-<p>© 2026 BabiDeal</p>
-</footer>
-
-<script>
-document.getElementById('search').addEventListener('input',function(){
-let value=this.value.toLowerCase();
-document.querySelectorAll('.product').forEach(p=>{
-p.style.display=p.innerText.toLowerCase().includes(value)?'block':'none';
-});
-});
-</script>
-</body>
-</html>
+＋ Publier une annonce
+Voir les annonces
+Nos catégories
+Toutes
+📱 Téléphones
+👕 Mode
+🚗 Véhicules
+🏠 Maison
+💻 Informatique
+Autres
+Les bonnes affaires
+📱
+Smartphone
+75 000 FCFA
+Abidjan
+Voir l'offre
+👟
+Chaussures
+15 000 FCFA
+Abidjan
+Voir l'offre
+💻
+Ordinateur
+180 000 FCFA
+Abidjan
+Voir l'offre
+🛋️
+Salon
+120 000 FCFA
+Abidjan
+Voir l'offre
+BabiDeal 🇨🇮
+Achetez et vendez facilement en Côte d'Ivoire.
+© 2026 BabiDeal
